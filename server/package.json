@@ -1,0 +1,24 @@
+{
+  "name": "rml-lsp-server",
+  "description": "Language server for Resource Modeling Language (RML)",
+  "version": "0.0.1",
+  "author": "Your Name",
+  "license": "MIT",
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "compile": "tsc -p .",
+    "watch": "tsc -watch -p ."
+  },
+  "dependencies": {
+    "antlr4ts": "^0.5.0-alpha.4",
+    "antlr4ts-cli": "^0.5.0-alpha.4",
+    "vscode-languageserver": "^7.0.0",
+    "vscode-languageserver-textdocument": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^12.0.0",
+    "typescript": "^4.0.0"
+  }
+}
