@@ -1,0 +1,59 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "UrosRML",
+  "scopeName": "source.uros-rml",
+  "patterns": [
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#comments"
+    }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.uros-rml",
+          "match": "\\b(thing|interface|implements|properties|behavior|state|on|command|event|goto|send|if|else)\\b"
+        },
+        {
+          "name": "entity.name.type.uros-rml",
+          "match": "\\b(UInt8|Int32|String|boolean)\\b"
+        },
+        {
+          "name": "variable.language.uros-rml",
+          "match": "\\b(true|false)\\b"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.uros-rml",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.uros-rml",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.double-slash.uros-rml",
+          "begin": "//",
+          "end": "$"
+        },
+        {
+          "name": "comment.block.uros-rml",
+          "begin": "/\\*",
+          "end": "\\*/"
+        }
+      ]
+    }
+  }
+}

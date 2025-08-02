@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "out",
+    "strict": true,
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "rootDir": "src",
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowJs": true,  // 允许编译器处理 JavaScript 文件
+    "checkJs": false, // 关闭对 JavaScript 文件的类型检查，避免不必要的错误
+    "skipLibCheck": true // 跳过声明文件检查，可以提高编译速度
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    ".vscode-test"
+  ]
+}
